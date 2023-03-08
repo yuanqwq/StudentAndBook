@@ -1,0 +1,568 @@
+2023-03-07 00:41:57.656 : Opening JDBC Connection
+2023-03-07 00:41:58.647 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:41:58.648 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:41:58.727 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:41:58.912 : Created connection 1524960486.
+2023-03-07 00:41:58.916 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:41:58.946 : ==> Parameters: 1(Integer)
+2023-03-07 00:41:59.004 : <==    Columns: sid, name, sex
+2023-03-07 00:41:59.004 : <==        Row: 1, 小亮, 男
+2023-03-07 00:41:59.006 : <==      Total: 1
+2023-03-07 00:41:59.007 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:41:59.007 : Returned connection 1524960486 to pool.
+2023-03-07 00:42:29.785 : Opening JDBC Connection
+2023-03-07 00:42:30.823 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:42:30.823 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:42:30.898 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:42:31.075 : Created connection 1524960486.
+2023-03-07 00:42:31.080 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:42:31.111 : ==> Parameters: 1(Integer)
+2023-03-07 00:42:31.165 : <==    Columns: sid, name, sex
+2023-03-07 00:42:31.166 : <==        Row: 1, 小亮, 男
+2023-03-07 00:42:31.167 : <==      Total: 1
+2023-03-07 00:42:31.168 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:42:31.168 : Returned connection 1524960486 to pool.
+2023-03-07 00:43:48.893 : Opening JDBC Connection
+2023-03-07 00:43:49.887 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:43:49.888 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:43:49.972 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:43:50.170 : Created connection 1524960486.
+2023-03-07 00:43:50.173 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:43:50.206 : ==> Parameters: 1(Integer)
+2023-03-07 00:43:50.273 : <==    Columns: sid, name, sex
+2023-03-07 00:43:50.274 : <==        Row: 1, 小亮, 男
+2023-03-07 00:43:50.275 : <==      Total: 1
+2023-03-07 00:43:50.276 : ==>  Preparing: select * from book where bid=?
+2023-03-07 00:43:50.277 : ==> Parameters: 1(Integer)
+2023-03-07 00:43:50.309 : <==    Columns: bid, name, author, price
+2023-03-07 00:43:50.309 : <==        Row: 1, book0, author0, 30.0
+2023-03-07 00:43:50.310 : <==      Total: 1
+2023-03-07 00:43:50.311 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:43:50.311 : Returned connection 1524960486 to pool.
+2023-03-07 00:44:42.740 : Opening JDBC Connection
+2023-03-07 00:44:43.710 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:44:43.711 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:44:43.791 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:44:43.970 : Created connection 1524960486.
+2023-03-07 00:44:43.974 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:44:44.007 : ==> Parameters: 1(Integer)
+2023-03-07 00:44:44.064 : <==    Columns: sid, name, sex
+2023-03-07 00:44:44.064 : <==        Row: 1, 小亮, 男
+2023-03-07 00:44:44.066 : <==      Total: 1
+2023-03-07 00:44:44.067 : ==>  Preparing: select * from book inner join borrow on book.bid=borrow.bid where sid=?
+2023-03-07 00:44:44.068 : ==> Parameters: 1(Integer)
+2023-03-07 00:44:44.112 : <==    Columns: bid, name, author, price, sid, bid
+2023-03-07 00:44:44.113 : <==        Row: 1, book0, author0, 30.0, 1, 1
+2023-03-07 00:44:44.113 : <==      Total: 1
+2023-03-07 00:44:44.114 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:44:44.114 : Returned connection 1524960486 to pool.
+2023-03-07 00:46:58.728 : Opening JDBC Connection
+2023-03-07 00:46:59.924 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:46:59.925 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:47:00.011 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:47:00.210 : Created connection 1524960486.
+2023-03-07 00:47:00.216 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:47:00.263 : ==> Parameters: 1(Integer)
+2023-03-07 00:47:00.326 : <==    Columns: sid, name, sex
+2023-03-07 00:47:00.327 : <==        Row: 1, 小亮, 男
+2023-03-07 00:47:00.329 : <==      Total: 1
+2023-03-07 00:47:00.330 : ==>  Preparing: insert into book(name, author, price) values(name=?,author=?,price=?)
+2023-03-07 00:47:00.332 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:47:00.333 : Returned connection 1524960486 to pool.
+2023-03-07 00:49:54.717 : Opening JDBC Connection
+2023-03-07 00:49:55.751 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:49:55.752 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:49:55.843 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:49:56.009 : Created connection 1524960486.
+2023-03-07 00:49:56.015 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:49:56.046 : ==> Parameters: 1(Integer)
+2023-03-07 00:49:56.105 : <==    Columns: sid, name, sex
+2023-03-07 00:49:56.105 : <==        Row: 1, 小亮, 男
+2023-03-07 00:49:56.107 : <==      Total: 1
+2023-03-07 00:49:56.108 : ==>  Preparing: insert into student(name, sex) values(name=?,sex=?)
+2023-03-07 00:49:56.110 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:49:56.110 : Returned connection 1524960486 to pool.
+2023-03-07 00:51:37.743 : Opening JDBC Connection
+2023-03-07 00:51:38.691 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:51:38.692 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:51:38.770 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:51:38.940 : Created connection 1524960486.
+2023-03-07 00:51:38.945 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:51:38.977 : ==> Parameters: 1(Integer)
+2023-03-07 00:51:39.032 : <==    Columns: sid, name, sex
+2023-03-07 00:51:39.032 : <==        Row: 1, 小亮, 男
+2023-03-07 00:51:39.034 : <==      Total: 1
+2023-03-07 00:51:39.036 : ==>  Preparing: insert into student(name, sex) values(name=?,sex=?)
+2023-03-07 00:51:39.037 : ==> Parameters: Li Hua(String), male(String)
+2023-03-07 00:51:39.105 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:51:39.105 : Returned connection 1524960486 to pool.
+2023-03-07 00:52:58.215 : Opening JDBC Connection
+2023-03-07 00:52:59.176 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:52:59.177 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:52:59.262 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:52:59.474 : Created connection 1524960486.
+2023-03-07 00:52:59.478 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:52:59.511 : ==> Parameters: 1(Integer)
+2023-03-07 00:52:59.572 : <==    Columns: sid, name, sex
+2023-03-07 00:52:59.572 : <==        Row: 1, 小亮, 男
+2023-03-07 00:52:59.574 : <==      Total: 1
+2023-03-07 00:52:59.576 : ==>  Preparing: insert into student(name, sex) values(name=?,sex=?)
+2023-03-07 00:52:59.577 : ==> Parameters: Li Hua(String), 男(String)
+2023-03-07 00:52:59.655 : <==    Updates: 1
+2023-03-07 00:52:59.656 : ==>  Preparing: insert into borrow values(?,?)
+2023-03-07 00:52:59.656 : ==> Parameters: 1(Integer), 2(Integer)
+2023-03-07 00:52:59.734 : <==    Updates: 1
+2023-03-07 00:52:59.736 : ==>  Preparing: select * from book inner join borrow on book.bid=borrow.bid where sid=?
+2023-03-07 00:52:59.736 : ==> Parameters: 1(Integer)
+2023-03-07 00:52:59.772 : <==    Columns: bid, name, author, price, sid, bid
+2023-03-07 00:52:59.773 : <==        Row: 1, book0, author0, 30.0, 1, 1
+2023-03-07 00:52:59.773 : <==        Row: 2, book1, author1, 32.0, 1, 2
+2023-03-07 00:52:59.773 : <==      Total: 2
+2023-03-07 00:52:59.775 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:52:59.775 : Returned connection 1524960486 to pool.
+2023-03-07 00:54:09.164 : Opening JDBC Connection
+2023-03-07 00:54:10.094 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:54:10.095 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:54:10.171 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:54:10.329 : Created connection 1524960486.
+2023-03-07 00:54:10.333 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:54:10.367 : ==> Parameters: 1(Integer)
+2023-03-07 00:54:10.420 : <==    Columns: sid, name, sex
+2023-03-07 00:54:10.420 : <==        Row: 1, 小亮, 男
+2023-03-07 00:54:10.422 : <==      Total: 1
+2023-03-07 00:54:10.425 : ==>  Preparing: insert into student(name, sex) values(name=?,sex=?)
+2023-03-07 00:54:10.425 : ==> Parameters: 李华(String), 男(String)
+2023-03-07 00:54:10.479 : <==    Updates: 1
+2023-03-07 00:54:10.479 : ==>  Preparing: insert into borrow values(?,?)
+2023-03-07 00:54:10.480 : ==> Parameters: 1(Integer), 2(Integer)
+2023-03-07 00:54:10.532 : <==    Updates: 1
+2023-03-07 00:54:10.533 : ==>  Preparing: select * from book inner join borrow on book.bid=borrow.bid where sid=?
+2023-03-07 00:54:10.534 : ==> Parameters: 1(Integer)
+2023-03-07 00:54:10.558 : <==    Columns: bid, name, author, price, sid, bid
+2023-03-07 00:54:10.559 : <==        Row: 1, book0, author0, 30.0, 1, 1
+2023-03-07 00:54:10.559 : <==        Row: 2, book1, author1, 32.0, 1, 2
+2023-03-07 00:54:10.560 : <==        Row: 2, book1, author1, 32.0, 1, 2
+2023-03-07 00:54:10.560 : <==      Total: 3
+2023-03-07 00:54:10.561 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:54:10.561 : Returned connection 1524960486 to pool.
+2023-03-07 00:56:55.058 : Opening JDBC Connection
+2023-03-07 00:56:56.031 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:56:56.032 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:56:56.120 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:56:56.339 : Created connection 1524960486.
+2023-03-07 00:56:56.342 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:56:56.381 : ==> Parameters: 1(Integer)
+2023-03-07 00:56:56.448 : <==    Columns: sid, name, sex
+2023-03-07 00:56:56.448 : <==        Row: 1, 小亮, 男
+2023-03-07 00:56:56.450 : <==      Total: 1
+2023-03-07 00:56:56.453 : ==>  Preparing: insert into student(name, sex) values(?,?)
+2023-03-07 00:56:56.454 : ==> Parameters: 李华(String), 男(String)
+2023-03-07 00:56:56.535 : <==    Updates: 1
+2023-03-07 00:56:56.535 : ==>  Preparing: insert into borrow values(?,?)
+2023-03-07 00:56:56.536 : ==> Parameters: 1(Integer), 2(Integer)
+2023-03-07 00:56:56.619 : <==    Updates: 1
+2023-03-07 00:56:56.620 : ==>  Preparing: select * from book inner join borrow on book.bid=borrow.bid where sid=?
+2023-03-07 00:56:56.621 : ==> Parameters: 1(Integer)
+2023-03-07 00:56:56.657 : <==    Columns: bid, name, author, price, sid, bid
+2023-03-07 00:56:56.657 : <==        Row: 1, book0, author0, 30.0, 1, 1
+2023-03-07 00:56:56.658 : <==        Row: 2, book1, author1, 32.0, 1, 2
+2023-03-07 00:56:56.659 : <==        Row: 2, book1, author1, 32.0, 1, 2
+2023-03-07 00:56:56.659 : <==        Row: 2, book1, author1, 32.0, 1, 2
+2023-03-07 00:56:56.659 : <==      Total: 4
+2023-03-07 00:56:56.661 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:56:56.661 : Returned connection 1524960486 to pool.
+2023-03-07 00:59:43.390 : Opening JDBC Connection
+2023-03-07 00:59:44.437 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:59:44.438 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 00:59:44.535 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 00:59:44.749 : Created connection 1524960486.
+2023-03-07 00:59:44.754 : ==>  Preparing: select * from student where sid=?
+2023-03-07 00:59:44.794 : ==> Parameters: 1(Integer)
+2023-03-07 00:59:44.857 : <==    Columns: sid, name, sex
+2023-03-07 00:59:44.857 : <==        Row: 1, 小亮, 男
+2023-03-07 00:59:44.859 : <==      Total: 1
+2023-03-07 00:59:44.861 : ==>  Preparing: insert into book(name, author, price) values(?,?,?)
+2023-03-07 00:59:44.862 : ==> Parameters: book2(String), author2(String), 25.5(Double)
+2023-03-07 00:59:44.933 : <==    Updates: 1
+2023-03-07 00:59:44.934 : ==>  Preparing: select * from book inner join borrow on book.bid=borrow.bid where sid=?
+2023-03-07 00:59:44.934 : ==> Parameters: 1(Integer)
+2023-03-07 00:59:44.967 : <==    Columns: bid, name, author, price, sid, bid
+2023-03-07 00:59:44.968 : <==        Row: 1, book0, author0, 30.0, 1, 1
+2023-03-07 00:59:44.968 : <==      Total: 1
+2023-03-07 00:59:44.969 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ae50ce6]
+2023-03-07 00:59:44.970 : Returned connection 1524960486 to pool.
+2023-03-07 01:08:39.472 : Opening JDBC Connection
+2023-03-07 01:08:40.502 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:08:40.502 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:08:40.583 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 01:08:40.780 : Created connection 77269878.
+2023-03-07 01:08:40.784 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 01:08:40.820 : ==> Parameters: 
+2023-03-07 01:08:40.879 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 01:08:40.880 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 01:08:40.881 : <==      Total: 1
+2023-03-07 01:08:40.883 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 01:08:40.883 : Returned connection 77269878 to pool.
+2023-03-07 01:12:59.862 : Opening JDBC Connection
+2023-03-07 01:13:00.873 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:13:00.873 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:13:00.954 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 01:13:01.153 : Created connection 77269878.
+2023-03-07 01:13:01.156 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 01:13:01.195 : ==> Parameters: 
+2023-03-07 01:13:01.255 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 01:13:01.255 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 01:13:01.259 : ====>  Preparing: select * from student where sid=?
+2023-03-07 01:13:01.259 : ====> Parameters: 1(Integer)
+2023-03-07 01:13:01.293 : <====    Columns: sid, name, sex
+2023-03-07 01:13:01.293 : <====        Row: 1, 小亮, 男
+2023-03-07 01:13:01.295 : <====      Total: 1
+2023-03-07 01:13:01.295 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:13:01.296 : ====> Parameters: 1(Integer)
+2023-03-07 01:13:01.330 : <====    Columns: bid, name, author, price
+2023-03-07 01:13:01.330 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 01:13:01.331 : <====      Total: 1
+2023-03-07 01:13:01.331 : <==      Total: 1
+2023-03-07 01:13:01.333 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 01:13:01.333 : Returned connection 77269878 to pool.
+2023-03-07 01:13:31.393 : Opening JDBC Connection
+2023-03-07 01:13:32.383 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:13:32.384 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:13:32.473 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 01:13:32.692 : Created connection 77269878.
+2023-03-07 01:13:32.696 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 01:13:32.734 : ==> Parameters: 
+2023-03-07 01:13:32.797 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 01:13:32.797 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 01:13:32.799 : ====>  Preparing: select * from student where sid=?
+2023-03-07 01:13:32.800 : ====> Parameters: 1(Integer)
+2023-03-07 01:13:32.837 : <====    Columns: sid, name, sex
+2023-03-07 01:13:32.837 : <====        Row: 1, 小亮, 男
+2023-03-07 01:13:32.838 : <====      Total: 1
+2023-03-07 01:13:32.839 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:13:32.839 : ====> Parameters: 1(Integer)
+2023-03-07 01:13:32.876 : <====    Columns: bid, name, author, price
+2023-03-07 01:13:32.876 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 01:13:32.877 : <====      Total: 1
+2023-03-07 01:13:32.877 : <==        Row: 1, 小亮, 男, 1, 2, 2, book1, author1, 32.0
+2023-03-07 01:13:32.878 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:13:32.879 : ====> Parameters: 2(Integer)
+2023-03-07 01:13:32.915 : <====    Columns: bid, name, author, price
+2023-03-07 01:13:32.915 : <====        Row: 2, book1, author1, 32.0
+2023-03-07 01:13:32.916 : <====      Total: 1
+2023-03-07 01:13:32.916 : <==        Row: 1, 小亮, 男, 1, 3, 3, book2, author2, 25.5
+2023-03-07 01:13:32.916 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:13:32.917 : ====> Parameters: 3(Integer)
+2023-03-07 01:13:32.952 : <====    Columns: bid, name, author, price
+2023-03-07 01:13:32.953 : <====        Row: 3, book2, author2, 25.5
+2023-03-07 01:13:32.953 : <====      Total: 1
+2023-03-07 01:13:32.953 : <==      Total: 3
+2023-03-07 01:13:32.954 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 01:13:32.955 : Returned connection 77269878 to pool.
+2023-03-07 01:39:20.992 : Opening JDBC Connection
+2023-03-07 01:39:21.728 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:39:21.729 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:39:21.807 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 01:39:21.976 : Created connection 1704629915.
+2023-03-07 01:39:21.980 : ==>  Preparing: insert into student(name, sex) values(?,?)
+2023-03-07 01:39:22.011 : ==> Parameters: 小王(String), 男(String)
+2023-03-07 01:39:22.069 : <==    Updates: 1
+2023-03-07 01:39:22.070 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@659a969b]
+2023-03-07 01:39:22.070 : Returned connection 1704629915 to pool.
+2023-03-07 01:39:50.819 : Opening JDBC Connection
+2023-03-07 01:39:50.819 : Checked out connection 1704629915 from pool.
+2023-03-07 01:39:50.819 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 01:39:50.819 : ==> Parameters: 
+2023-03-07 01:39:50.873 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 01:39:50.874 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 01:39:50.877 : ====>  Preparing: select * from student where sid=?
+2023-03-07 01:39:50.877 : ====> Parameters: 1(Integer)
+2023-03-07 01:39:50.904 : <====    Columns: sid, name, sex
+2023-03-07 01:39:50.904 : <====        Row: 1, 小亮, 男
+2023-03-07 01:39:50.905 : <====      Total: 1
+2023-03-07 01:39:50.905 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:39:50.906 : ====> Parameters: 1(Integer)
+2023-03-07 01:39:50.932 : <====    Columns: bid, name, author, price
+2023-03-07 01:39:50.932 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 01:39:50.933 : <====      Total: 1
+2023-03-07 01:39:50.933 : <==        Row: 1, 小亮, 男, 1, 2, 2, book1, author1, 32.0
+2023-03-07 01:39:50.934 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:39:50.935 : ====> Parameters: 2(Integer)
+2023-03-07 01:39:50.961 : <====    Columns: bid, name, author, price
+2023-03-07 01:39:50.962 : <====        Row: 2, book1, author1, 32.0
+2023-03-07 01:39:50.962 : <====      Total: 1
+2023-03-07 01:39:50.963 : <==        Row: 1, 小亮, 男, 1, 3, 3, book2, author2, 25.5
+2023-03-07 01:39:50.963 : ====>  Preparing: select * from book where bid=?
+2023-03-07 01:39:50.963 : ====> Parameters: 3(Integer)
+2023-03-07 01:39:50.989 : <====    Columns: bid, name, author, price
+2023-03-07 01:39:50.989 : <====        Row: 3, book2, author2, 25.5
+2023-03-07 01:39:50.990 : <====      Total: 1
+2023-03-07 01:39:50.991 : <==      Total: 3
+2023-03-07 01:39:50.992 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@659a969b]
+2023-03-07 01:39:50.992 : Returned connection 1704629915 to pool.
+2023-03-07 01:40:46.987 : Opening JDBC Connection
+2023-03-07 01:40:47.733 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:40:47.734 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:40:47.813 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 01:40:48.007 : Created connection 1704629915.
+2023-03-07 01:40:48.012 : ==>  Preparing: insert into student(name, sex) values(?,?)
+2023-03-07 01:40:48.048 : ==> Parameters: 王王王王王王王王王(String), 男(String)
+2023-03-07 01:40:48.114 : <==    Updates: 1
+2023-03-07 01:40:48.114 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@659a969b]
+2023-03-07 01:40:48.114 : Returned connection 1704629915 to pool.
+2023-03-07 01:48:03.063 : Opening JDBC Connection
+2023-03-07 01:48:03.801 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:48:03.802 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 01:48:03.883 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 01:48:04.060 : Created connection 1704629915.
+2023-03-07 01:48:04.063 : ==>  Preparing: insert into book(name, author, price) values(?,?,?)
+2023-03-07 01:48:04.097 : ==> Parameters: book3(String), author3(String), 45.0(Double)
+2023-03-07 01:48:04.163 : <==    Updates: 1
+2023-03-07 01:48:04.163 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@659a969b]
+2023-03-07 01:48:04.163 : Returned connection 1704629915 to pool.
+2023-03-07 02:00:26.176 : Opening JDBC Connection
+2023-03-07 02:00:27.013 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 02:00:27.014 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 02:00:27.094 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 02:00:27.272 : Created connection 77269878.
+2023-03-07 02:00:27.276 : ==>  Preparing: select * from student
+2023-03-07 02:00:27.310 : ==> Parameters: 
+2023-03-07 02:00:27.369 : <==    Columns: sid, name, sex
+2023-03-07 02:00:27.369 : <==        Row: 1, 小亮, 男
+2023-03-07 02:00:27.371 : <==        Row: 2, 小刚, 男
+2023-03-07 02:00:27.371 : <==        Row: 3, 小刚, 男
+2023-03-07 02:00:27.372 : <==        Row: 4, 小刚, 男
+2023-03-07 02:00:27.372 : <==        Row: 5, 小刚, 男
+2023-03-07 02:00:27.372 : <==        Row: 6, 小王, 男
+2023-03-07 02:00:27.372 : <==        Row: 7, 小李, 女
+2023-03-07 02:00:27.373 : <==        Row: 10, 小白, 男
+2023-03-07 02:00:27.373 : <==        Row: 11, 小白, 男
+2023-03-07 02:00:27.373 : <==        Row: 12, 小白, 男
+2023-03-07 02:00:27.374 : <==        Row: 13, 小白, 男
+2023-03-07 02:00:27.375 : <==        Row: 16, 李华, 男
+2023-03-07 02:00:27.375 : <==        Row: 17, 小王, 男
+2023-03-07 02:00:27.376 : <==        Row: 18, 王王王王王王王王王, 男
+2023-03-07 02:00:27.376 : <==      Total: 14
+2023-03-07 02:00:27.380 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:00:27.380 : Returned connection 77269878 to pool.
+2023-03-07 02:00:52.517 : Opening JDBC Connection
+2023-03-07 02:00:52.517 : Checked out connection 77269878 from pool.
+2023-03-07 02:00:52.517 : ==>  Preparing: select * from book
+2023-03-07 02:00:52.517 : ==> Parameters: 
+2023-03-07 02:00:52.546 : <==    Columns: bid, name, author, price
+2023-03-07 02:00:52.547 : <==        Row: 1, book0, author0, 30.0
+2023-03-07 02:00:52.547 : <==        Row: 2, book1, author1, 32.0
+2023-03-07 02:00:52.548 : <==        Row: 3, book2, author2, 25.5
+2023-03-07 02:00:52.548 : <==        Row: 4, book3, author3, 45.0
+2023-03-07 02:00:52.548 : <==      Total: 4
+2023-03-07 02:00:52.550 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:00:52.550 : Returned connection 77269878 to pool.
+2023-03-07 02:01:11.463 : Opening JDBC Connection
+2023-03-07 02:01:11.463 : Checked out connection 77269878 from pool.
+2023-03-07 02:01:11.463 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 02:01:11.464 : ==> Parameters: 
+2023-03-07 02:01:11.493 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 02:01:11.493 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 02:01:11.495 : ====>  Preparing: select * from student where sid=?
+2023-03-07 02:01:11.496 : ====> Parameters: 1(Integer)
+2023-03-07 02:01:11.525 : <====    Columns: sid, name, sex
+2023-03-07 02:01:11.525 : <====        Row: 1, 小亮, 男
+2023-03-07 02:01:11.526 : <====      Total: 1
+2023-03-07 02:01:11.526 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:01:11.526 : ====> Parameters: 1(Integer)
+2023-03-07 02:01:11.554 : <====    Columns: bid, name, author, price
+2023-03-07 02:01:11.554 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 02:01:11.555 : <====      Total: 1
+2023-03-07 02:01:11.555 : <==        Row: 1, 小亮, 男, 1, 2, 2, book1, author1, 32.0
+2023-03-07 02:01:11.556 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:01:11.557 : ====> Parameters: 2(Integer)
+2023-03-07 02:01:11.585 : <====    Columns: bid, name, author, price
+2023-03-07 02:01:11.585 : <====        Row: 2, book1, author1, 32.0
+2023-03-07 02:01:11.586 : <====      Total: 1
+2023-03-07 02:01:11.587 : <==        Row: 1, 小亮, 男, 1, 3, 3, book2, author2, 25.5
+2023-03-07 02:01:11.587 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:01:11.587 : ====> Parameters: 3(Integer)
+2023-03-07 02:01:11.616 : <====    Columns: bid, name, author, price
+2023-03-07 02:01:11.616 : <====        Row: 3, book2, author2, 25.5
+2023-03-07 02:01:11.617 : <====      Total: 1
+2023-03-07 02:01:11.617 : <==      Total: 3
+2023-03-07 02:01:11.618 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:01:11.618 : Returned connection 77269878 to pool.
+2023-03-07 02:02:44.096 : Opening JDBC Connection
+2023-03-07 02:02:44.826 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 02:02:44.827 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 02:02:44.913 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 02:02:45.138 : Created connection 77269878.
+2023-03-07 02:02:45.144 : ==>  Preparing: select * from student
+2023-03-07 02:02:45.184 : ==> Parameters: 
+2023-03-07 02:02:45.245 : <==    Columns: sid, name, sex
+2023-03-07 02:02:45.245 : <==        Row: 1, 小亮, 男
+2023-03-07 02:02:45.247 : <==        Row: 2, 小刚, 男
+2023-03-07 02:02:45.248 : <==        Row: 3, 小刚, 男
+2023-03-07 02:02:45.248 : <==        Row: 4, 小刚, 男
+2023-03-07 02:02:45.248 : <==        Row: 5, 小刚, 男
+2023-03-07 02:02:45.249 : <==        Row: 6, 小王, 男
+2023-03-07 02:02:45.249 : <==        Row: 7, 小李, 女
+2023-03-07 02:02:45.249 : <==        Row: 10, 小白, 男
+2023-03-07 02:02:45.250 : <==        Row: 11, 小白, 男
+2023-03-07 02:02:45.250 : <==        Row: 12, 小白, 男
+2023-03-07 02:02:45.250 : <==        Row: 13, 小白, 男
+2023-03-07 02:02:45.252 : <==        Row: 16, 李华, 男
+2023-03-07 02:02:45.252 : <==        Row: 17, 小王, 男
+2023-03-07 02:02:45.252 : <==        Row: 18, 王王王王王王王王王, 男
+2023-03-07 02:02:45.252 : <==      Total: 14
+2023-03-07 02:02:45.255 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:02:45.256 : Returned connection 77269878 to pool.
+2023-03-07 02:03:06.810 : Opening JDBC Connection
+2023-03-07 02:03:06.811 : Checked out connection 77269878 from pool.
+2023-03-07 02:03:06.812 : ==>  Preparing: select * from book
+2023-03-07 02:03:06.812 : ==> Parameters: 
+2023-03-07 02:03:06.849 : <==    Columns: bid, name, author, price
+2023-03-07 02:03:06.850 : <==        Row: 1, book0, author0, 30.0
+2023-03-07 02:03:06.850 : <==        Row: 2, book1, author1, 32.0
+2023-03-07 02:03:06.851 : <==        Row: 3, book2, author2, 25.5
+2023-03-07 02:03:06.851 : <==        Row: 4, book3, author3, 45.0
+2023-03-07 02:03:06.851 : <==      Total: 4
+2023-03-07 02:03:06.853 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:03:06.853 : Returned connection 77269878 to pool.
+2023-03-07 02:03:13.905 : Opening JDBC Connection
+2023-03-07 02:03:13.906 : Checked out connection 77269878 from pool.
+2023-03-07 02:03:13.906 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 02:03:13.907 : ==> Parameters: 
+2023-03-07 02:03:13.943 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 02:03:13.943 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 02:03:13.945 : ====>  Preparing: select * from student where sid=?
+2023-03-07 02:03:13.945 : ====> Parameters: 1(Integer)
+2023-03-07 02:03:13.981 : <====    Columns: sid, name, sex
+2023-03-07 02:03:13.981 : <====        Row: 1, 小亮, 男
+2023-03-07 02:03:13.981 : <====      Total: 1
+2023-03-07 02:03:13.982 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:03:13.982 : ====> Parameters: 1(Integer)
+2023-03-07 02:03:14.017 : <====    Columns: bid, name, author, price
+2023-03-07 02:03:14.017 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 02:03:14.017 : <====      Total: 1
+2023-03-07 02:03:14.018 : <==        Row: 1, 小亮, 男, 1, 2, 2, book1, author1, 32.0
+2023-03-07 02:03:14.019 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:03:14.019 : ====> Parameters: 2(Integer)
+2023-03-07 02:03:14.054 : <====    Columns: bid, name, author, price
+2023-03-07 02:03:14.055 : <====        Row: 2, book1, author1, 32.0
+2023-03-07 02:03:14.056 : <====      Total: 1
+2023-03-07 02:03:14.056 : <==        Row: 1, 小亮, 男, 1, 3, 3, book2, author2, 25.5
+2023-03-07 02:03:14.056 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:03:14.057 : ====> Parameters: 3(Integer)
+2023-03-07 02:03:14.092 : <====    Columns: bid, name, author, price
+2023-03-07 02:03:14.093 : <====        Row: 3, book2, author2, 25.5
+2023-03-07 02:03:14.093 : <====      Total: 1
+2023-03-07 02:03:14.093 : <==      Total: 3
+2023-03-07 02:03:14.094 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:03:14.094 : Returned connection 77269878 to pool.
+2023-03-07 02:12:26.015 : Opening JDBC Connection
+2023-03-07 02:12:26.761 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 02:12:26.762 : X509Certificate: Alg:{0}, Serial:{1}, Subject:{2}, Issuer:{3}, Key type:{4}, Length:{5}, Cert Id:{6}, Valid from:{7}, Valid until:{8}
+2023-03-07 02:12:26.843 :  TLSHandshake: {0}:{1}, {2}, {3}, {4}
+2023-03-07 02:12:27.026 : Created connection 77269878.
+2023-03-07 02:12:27.030 : ==>  Preparing: select sid from student
+2023-03-07 02:12:27.063 : ==> Parameters: 
+2023-03-07 02:12:27.121 : <==    Columns: sid
+2023-03-07 02:12:27.121 : <==        Row: 1
+2023-03-07 02:12:27.122 : <==        Row: 2
+2023-03-07 02:12:27.123 : <==        Row: 3
+2023-03-07 02:12:27.123 : <==        Row: 4
+2023-03-07 02:12:27.123 : <==        Row: 5
+2023-03-07 02:12:27.124 : <==        Row: 6
+2023-03-07 02:12:27.124 : <==        Row: 7
+2023-03-07 02:12:27.124 : <==        Row: 10
+2023-03-07 02:12:27.124 : <==        Row: 11
+2023-03-07 02:12:27.124 : <==        Row: 12
+2023-03-07 02:12:27.124 : <==        Row: 13
+2023-03-07 02:12:27.126 : <==        Row: 16
+2023-03-07 02:12:27.126 : <==        Row: 17
+2023-03-07 02:12:27.126 : <==        Row: 18
+2023-03-07 02:12:27.126 : <==      Total: 14
+2023-03-07 02:12:34.839 : ==>  Preparing: select bid from book
+2023-03-07 02:12:34.840 : ==> Parameters: 
+2023-03-07 02:12:34.871 : <==    Columns: bid
+2023-03-07 02:12:34.871 : <==        Row: 1
+2023-03-07 02:12:34.871 : <==        Row: 2
+2023-03-07 02:12:34.872 : <==        Row: 3
+2023-03-07 02:12:34.872 : <==        Row: 4
+2023-03-07 02:12:34.872 : <==      Total: 4
+2023-03-07 02:12:39.071 : ==>  Preparing: insert into borrow values(?,?)
+2023-03-07 02:12:39.072 : ==> Parameters: 3(Integer), 2(Integer)
+2023-03-07 02:12:39.135 : <==    Updates: 1
+2023-03-07 02:12:39.135 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:12:39.135 : Returned connection 77269878 to pool.
+2023-03-07 02:12:42.895 : Opening JDBC Connection
+2023-03-07 02:12:42.895 : Checked out connection 77269878 from pool.
+2023-03-07 02:12:42.895 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 02:12:42.896 : ==> Parameters: 
+2023-03-07 02:12:42.927 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 02:12:42.928 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 02:12:42.929 : ====>  Preparing: select * from student where sid=?
+2023-03-07 02:12:42.930 : ====> Parameters: 1(Integer)
+2023-03-07 02:12:42.959 : <====    Columns: sid, name, sex
+2023-03-07 02:12:42.960 : <====        Row: 1, 小亮, 男
+2023-03-07 02:12:42.961 : <====      Total: 1
+2023-03-07 02:12:42.961 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:12:42.961 : ====> Parameters: 1(Integer)
+2023-03-07 02:12:42.991 : <====    Columns: bid, name, author, price
+2023-03-07 02:12:42.991 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 02:12:42.992 : <====      Total: 1
+2023-03-07 02:12:42.992 : <==        Row: 1, 小亮, 男, 1, 2, 2, book1, author1, 32.0
+2023-03-07 02:12:42.993 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:12:42.994 : ====> Parameters: 2(Integer)
+2023-03-07 02:12:43.023 : <====    Columns: bid, name, author, price
+2023-03-07 02:12:43.024 : <====        Row: 2, book1, author1, 32.0
+2023-03-07 02:12:43.025 : <====      Total: 1
+2023-03-07 02:12:43.025 : <==        Row: 1, 小亮, 男, 1, 3, 3, book2, author2, 25.5
+2023-03-07 02:12:43.025 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:12:43.026 : ====> Parameters: 3(Integer)
+2023-03-07 02:12:43.055 : <====    Columns: bid, name, author, price
+2023-03-07 02:12:43.055 : <====        Row: 3, book2, author2, 25.5
+2023-03-07 02:12:43.056 : <====      Total: 1
+2023-03-07 02:12:43.057 : <==        Row: 3, 小刚, 男, 3, 2, 2, book1, author1, 32.0
+2023-03-07 02:12:43.057 : ====>  Preparing: select * from student where sid=?
+2023-03-07 02:12:43.057 : ====> Parameters: 3(Integer)
+2023-03-07 02:12:43.087 : <====    Columns: sid, name, sex
+2023-03-07 02:12:43.087 : <====        Row: 3, 小刚, 男
+2023-03-07 02:12:43.087 : <====      Total: 1
+2023-03-07 02:12:43.088 : <==      Total: 4
+2023-03-07 02:12:43.092 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:12:43.092 : Returned connection 77269878 to pool.
+2023-03-07 02:12:51.835 : Opening JDBC Connection
+2023-03-07 02:12:51.835 : Checked out connection 77269878 from pool.
+2023-03-07 02:12:51.836 : ==>  Preparing: select * from student inner join borrow on student.sid=borrow.sid inner join book on borrow.bid=book.bid
+2023-03-07 02:12:51.836 : ==> Parameters: 
+2023-03-07 02:12:51.869 : <==    Columns: sid, name, sex, sid, bid, bid, name, author, price
+2023-03-07 02:12:51.870 : <==        Row: 1, 小亮, 男, 1, 1, 1, book0, author0, 30.0
+2023-03-07 02:12:51.870 : ====>  Preparing: select * from student where sid=?
+2023-03-07 02:12:51.871 : ====> Parameters: 1(Integer)
+2023-03-07 02:12:51.900 : <====    Columns: sid, name, sex
+2023-03-07 02:12:51.900 : <====        Row: 1, 小亮, 男
+2023-03-07 02:12:51.901 : <====      Total: 1
+2023-03-07 02:12:51.902 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:12:51.902 : ====> Parameters: 1(Integer)
+2023-03-07 02:12:51.932 : <====    Columns: bid, name, author, price
+2023-03-07 02:12:51.932 : <====        Row: 1, book0, author0, 30.0
+2023-03-07 02:12:51.933 : <====      Total: 1
+2023-03-07 02:12:51.934 : <==        Row: 1, 小亮, 男, 1, 2, 2, book1, author1, 32.0
+2023-03-07 02:12:51.934 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:12:51.935 : ====> Parameters: 2(Integer)
+2023-03-07 02:12:51.964 : <====    Columns: bid, name, author, price
+2023-03-07 02:12:51.964 : <====        Row: 2, book1, author1, 32.0
+2023-03-07 02:12:51.965 : <====      Total: 1
+2023-03-07 02:12:51.966 : <==        Row: 1, 小亮, 男, 1, 3, 3, book2, author2, 25.5
+2023-03-07 02:12:51.966 : ====>  Preparing: select * from book where bid=?
+2023-03-07 02:12:51.966 : ====> Parameters: 3(Integer)
+2023-03-07 02:12:51.996 : <====    Columns: bid, name, author, price
+2023-03-07 02:12:51.996 : <====        Row: 3, book2, author2, 25.5
+2023-03-07 02:12:51.997 : <====      Total: 1
+2023-03-07 02:12:51.997 : <==        Row: 3, 小刚, 男, 3, 2, 2, book1, author1, 32.0
+2023-03-07 02:12:51.997 : ====>  Preparing: select * from student where sid=?
+2023-03-07 02:12:51.997 : ====> Parameters: 3(Integer)
+2023-03-07 02:12:52.027 : <====    Columns: sid, name, sex
+2023-03-07 02:12:52.028 : <====        Row: 3, 小刚, 男
+2023-03-07 02:12:52.028 : <====      Total: 1
+2023-03-07 02:12:52.028 : <==      Total: 4
+2023-03-07 02:12:52.029 : Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49b0b76]
+2023-03-07 02:12:52.029 : Returned connection 77269878 to pool.
